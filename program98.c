@@ -1,0 +1,37 @@
+
+// accept the no. from user and 
+# include<stdio.h>
+# include<stdlib.h>
+
+typedef unsigned long long ULONG;     // typedef is used to create foer shortcut of Unsingned long long or any other 
+
+ULONG Factorial (int iNo)
+{
+     int iCnt = 0;
+     unsigned long long iFact = 0;
+    for ( iCnt = 1, iFact = 1; iCnt <= iNo; iCnt++)
+    {
+        iFact = iFact * iCnt;
+    }
+    return iFact;
+}
+
+int main ()
+{
+
+    int iValue = 0;
+    ULONG iRet = 0;
+   
+
+    printf("Enter a num : \n");
+    scanf("%d", &iValue);
+    
+    
+    iRet = Factorial(iValue);
+
+    printf("Factorial is : %lld\n" , iRet);
+
+
+
+    return EXIT_SUCCESS;   
+}
