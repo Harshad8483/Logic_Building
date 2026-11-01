@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+
+int main()
+{
+    char Arr[100] = {'G', 'A', 'N', 'E','S','H','\0','P','U','N','E'};      // When we traverse upto '\0' then string ends here 
+    
+    printf("%s\n", Arr);
+    printf("Size of Array is : %d\n", sizeof(Arr));
+
+
+    return EXIT_SUCCESS;
+}
